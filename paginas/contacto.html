@@ -87,39 +87,41 @@
       </header>
         <!-- ======= Main ======= -->
         <main>
-                <section class="hero">
-                    <div class="hero__cont">
-                        <h1 class= "hero__vmg">VMG  <span> Group </span></h1>
-                        <h2 class= "hero__div">División Salud y seguridad Ocupacional.</h2>
+                <section class="hero-cont">
+                    <div class="vmg-div-contacto">
+                        <h1 class= "hero-vmg-contacto d-none d-md-block">VMG  <span> Group </span></h1>
+                        <h2 class= "hero-div-contacto">División Salud y seguridad Ocupacional.</h2>
                     </div>
                 </section>
                 <fieldset>
-                    <legend>Formulario de Contacto</legend>
+                    <div class="d-none d-md-block">
+                        <legend>Formulario de Contacto</legend>
                         <h1>CONTACTO</h1>
+                    </div>
                         <form class="form" action="">
-                            <div>
+                            <div class="input-label-contacto">
                                 <input id="firstname" type="first_name" placeholder="* Nombre" required>
-                                <label for="firstname">Nombre</label>
+                                <label class="d-none d-md-block" for="firstname">Nombre</label>
                             </div>
-                            <div>
+                            <div class="input-label-contacto">
                                 <input id="name" type="name" placeholder="* Apellido" required>
-                                <label for="name">Apellido</label>
+                                <label class="d-none d-md-block" for="name">Apellido</label>
                             </div>
-                            <div>
+                            <div class="input-label-contacto">
                                 <input id="sector" type="text" placeholder="Empresa">
-                                <label for="sector">Empresa</label>
+                                <label class="d-none d-md-block" for="sector">Empresa</label>
                             </div>
-                            <div>
+                            <div class="input-label-contacto">
                                 <input id="position" type="text" placeholder="Cargo">
-                                <label for="position">Cargo</label>
+                                <label class="d-none d-md-block" for="position">Cargo</label>
                             </div>
-                            <div>
+                            <div class="input-label-contacto">
                                 <input id="phone" type="tel" placeholder="Teléfono">
-                                <label for="phone">Teléfono</label>
+                                <label class="d-none d-md-block" for="phone">Teléfono</label>
                             </div>
-                            <div>
+                            <div class="input-label-contacto">
                                 <input id="email" type="email" placeholder="* Mail" required>
-                                <label for="email">Mail</label>
+                                <label class="d-none d-md-block" for="email">Mail</label>
                             </div>
                             <textarea id="mensage" name=""  placeholder="* Mensaje" required></textarea>
                             
