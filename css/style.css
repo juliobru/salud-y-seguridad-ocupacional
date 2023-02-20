@@ -110,8 +110,26 @@ main {
 }
 
 
+.carousel-stilo {
+    max-height: 680px;
+    overflow: hidden;
+    /* align-content:end; */
+}
 
+@media (max-width:756px) {
+    .carousel-stilo {
+        max-height: 320px;
+    }
+}
 
+@media (min-width:1280px) {
+    .carousel-stilo {
+        max-height: 780px;
+    }
+}
+.carousel-item {
+    text-align: center;
+}
 
 .carousel-caption-custom {
     bottom: 20vw;
@@ -140,29 +158,124 @@ main {
 
 .grilla {
     display: grid;
+    
     grid-template-areas: 
         "presentacion-somos presentacion-somos"
         "presentacion-foto-actividades hacemos";
     grid-template-columns: 50% 50%;
-    grid-template-rows: 200px 300px
+    grid-template-rows: auto auto;
+    transition: all 500ms;
 }
+
+/*.grilla:hover {
+    grid-template-rows: 300px 300px
+}*/
+
+@media (max-width:756px) {
+    .grilla{
+    grid-template-areas: 
+    "presentacion-somos"
+    "presentacion-foto-actividades"
+    "hacemos";
+    grid-template-columns: 100%;
+    grid-template-rows: auto 200px auto
+    }
+}
+
+
+
+
 .presentacion-foto-actividades {
-    grid-area: "presentacion-foto-actividades";
+    grid-area: presentacion-foto-actividades;
+    margin: 0 0 0 20px;
 }
+
+
+
+@media (max-width:756px) {
+    .presentacion-foto-actividades {
+        margin: 10px 20px 10px 20px;
+    }
+}
+.presentacion-foto-actividades img{
+    max-height: 100%;
+    object-fit: cover;
+    overflow: hidden;     
+}      
+
+
 .presentacion-somos {
-    grid-area: "presentacion-somos";
+    grid-area: presentacion-somos;
     margin: 20px;
     border: #222222;
+    border-radius: 8px;
     border-style: solid;
     padding: 20px;
+    font-size: 18px;
+    transition: all 500ms;
+}
+
+
+.presentacion-somos:hover {
+    font-size: 24px;
+    box-shadow: 10px 10px #222222;
+    background-color: #dfeef9;
+    
+}
+@media (max-width:756px) {
+    .presentacion-somos:hover{
+        box-shadow: 10px 10px #222222;
+        background-color: #dfeef9;
+        font-size: 18px;
+    }
+}
+
+
+.sobre-nosotros {
+    font-weight: bold;
 }
 .hacemos {
     grid-area: hacemos;
+    margin: 0 20px 0 0;
     border: #222222;
+    border-radius: 8px;
     border-style: solid;
-    padding: 20px;
+    padding: 10px 20px 20px 20px;
+    font-size: 18px;
+    transition: all 500ms;
 }
 
+.hacemos:hover {
+    font-size: 24px;
+    box-shadow: 10px 10px #222222;
+    background-color: #dfeef9;
+    
+}
+
+@media (max-width:756px) {
+    .hacemos{
+            margin: 20px;
+            border: #222222;
+            border-radius: 8px;
+            border-style: solid;
+            padding: 20px;
+            font-size: 18px;
+            transition: all 500ms;
+
+    }
+}
+
+
+
+
+
+@media (max-width:756px) {
+    .hacemos:hover {
+        box-shadow: 10px 10px #222222;
+        background-color: #dfeef9;
+        font-size: 18px; 
+    }
+}
 
 .presentacion {
     margin: 0;
