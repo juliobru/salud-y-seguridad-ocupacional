@@ -220,8 +220,16 @@ main {
     font-size: 24px;
     box-shadow: 10px 10px #222222;
     background-color: #dfeef9;
-    
+        
 }
+@media (min-width:1500px) {
+    .presentacion-somos:hover {
+        font-size: 26px;
+        box-shadow: 10px 10px #222222;
+        background-color: #dfeef9;
+    }
+}
+
 @media (max-width:756px) {
     .presentacion-somos:hover{
         box-shadow: 10px 10px #222222;
@@ -252,6 +260,8 @@ main {
     
 }
 
+
+
 @media (max-width:756px) {
     .hacemos{
             margin: 20px;
@@ -265,8 +275,25 @@ main {
     }
 }
 
+@media (min-width:1500px) {
+    .hacemos{
+            margin: 0 20px 0 0;
+            border: #222222;
+            border-radius: 8px;
+            border-style: solid;
+            padding: 20px;
+            font-size: 22px;
+            transition: all 500ms;
 
-
+    }
+}
+@media (min-width:1500px) {
+    .hacemos:hover {
+        font-size: 26px;
+        box-shadow: 10px 10px #222222;
+        background-color: #dfeef9;
+    }
+}
 
 
 @media (max-width:756px) {
@@ -376,7 +403,7 @@ main {
 
 @media (max-width:756px) {
     .hero-cont {
-        height: 15vh;
+        height: 25vh;
             
         
     }
