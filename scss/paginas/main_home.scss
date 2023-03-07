@@ -91,34 +91,40 @@ main {
 //@media
 
 @media (max-width:$cel) {
-    .carousel-stilo {
-        max-height: 320px;
+    main {
+        .carousel-stilo {
+            max-height: 320px;
+        }
+        .grilla{
+            display: grid;
+            grid-template-areas: 
+                "presentacion-somos"
+                "presentacion-foto-actividades"
+                "hacemos";
+            grid-template-columns: 100%;
+            grid-template-rows: auto 200px auto;
+        
+                .presentacion-foto-actividades {
+                    margin: 10px 20px 10px 20px;
+                }
+                .presentacion-somos:hover{
+                    @include main-hover-anim (18px)
+                }
+                .hacemos{
+                    margin: 20px;
+                    padding: 20px;
+                    @include border($border-color, 8px, solid);
+                    font-size: 18px;
+                    transition: all 500ms;
+                        &:hover {
+                            @include main-hover-anim (18px);
+            
+                        }
+                }
+            
+        }
     }
-    .grilla{
-        grid-template-areas: 
-        "presentacion-somos"
-        "presentacion-foto-actividades"
-        "hacemos";
-        grid-template-columns: 100%;
-        grid-template-rows: auto 200px auto
-    }
-    .presentacion-foto-actividades {
-        margin: 10px 20px 10px 20px;
-    }
-    .presentacion-somos:hover{
-        @include main-hover-anim (18px)
-    }
-    .hacemos{
-        margin: 20px;
-        padding: 20px;
-        @include border($border-color, 8px, solid);
-        font-size: 18px;
-        transition: all 500ms;
-            &:hover {
-                @include main-hover-anim (18px);
- 
-            }
-    }
+    
 }
 
 @media (min-width:$pantalla-grande) {

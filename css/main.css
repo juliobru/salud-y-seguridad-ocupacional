@@ -60,7 +60,9 @@ header {
   justify-content: left; }
   #topbar .topbar-element {
     margin: 10px;
-    padding-left: 20px; }
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row; }
     #topbar .topbar-element a {
       color: #fff;
       text-decoration: none;
@@ -89,7 +91,7 @@ footer {
     height: 80px;
     text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center; }
   footer #hys {
     margin: 0px;
@@ -210,30 +212,31 @@ main {
           border-style: solid; }
 
 @media (max-width: 758px) {
-  .carousel-stilo {
+  main .carousel-stilo {
     max-height: 320px; }
-  .grilla {
+  main .grilla {
+    display: grid;
     grid-template-areas: "presentacion-somos" "presentacion-foto-actividades" "hacemos";
     grid-template-columns: 100%;
     grid-template-rows: auto 200px auto; }
-  .presentacion-foto-actividades {
-    margin: 10px 20px 10px 20px; }
-  .presentacion-somos:hover {
-    font-size: 18px;
-    box-shadow: 10px 10px #222222;
-    background-color: #dfeef9; }
-  .hacemos {
-    margin: 20px;
-    padding: 20px;
-    border: #222222;
-    border-radius: 8px;
-    border-style: solid;
-    font-size: 18px;
-    transition: all 500ms; }
-    .hacemos:hover {
+    main .grilla .presentacion-foto-actividades {
+      margin: 10px 20px 10px 20px; }
+    main .grilla .presentacion-somos:hover {
       font-size: 18px;
       box-shadow: 10px 10px #222222;
-      background-color: #dfeef9; } }
+      background-color: #dfeef9; }
+    main .grilla .hacemos {
+      margin: 20px;
+      padding: 20px;
+      border: #222222;
+      border-radius: 8px;
+      border-style: solid;
+      font-size: 18px;
+      transition: all 500ms; }
+      main .grilla .hacemos:hover {
+        font-size: 18px;
+        box-shadow: 10px 10px #222222;
+        background-color: #dfeef9; } }
 
 @media (min-width: 1280px) {
   .carousel-stilo {
@@ -254,6 +257,38 @@ main {
       font-size: 26px;
       box-shadow: 10px 10px #222222;
       background-color: #dfeef9; } }
+
+#seg-industrial {
+  margin: 0;
+  padding: 0;
+  background: #e1e7e6; }
+
+.hero-seg {
+  width: 100%;
+  background: url(../imagenes/oficina.bmp) top left;
+  background-image: url(../imagenes/oficina.bmp);
+  background-position-x: left;
+  background-position-y: top;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30vh; }
+
+.vmg-div-seg {
+  width: 756px; }
+
+.hero-div-seg {
+  margin: 0 0 0 5%;
+  padding: 0;
+  color: #444444;
+  font-size: 20px;
+  text-align: left; }
 
 .card-style-custom {
   color: #212529;

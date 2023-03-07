@@ -6,11 +6,14 @@
             .topbar-element {
                 margin: 10px;
                 padding-left: 20px;
+                display: flex;
+                flex-direction: row;
             
                 a {
                     color: $blanco;
                     text-decoration: none;
                     padding-left: 10px;
+                    
                 }
             }
 }

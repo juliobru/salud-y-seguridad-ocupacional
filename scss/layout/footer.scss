@@ -15,7 +15,7 @@ footer {
             margin: 0;
             height: $footer-height;
             text-align: center;
-            @include basic-flex (flex, row, center);
+            @include basic-flex (flex, column, center);
         }
         #hys {
             margin: 0px;

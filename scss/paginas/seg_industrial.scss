@@ -1,3 +1,23 @@
+#seg-industrial {
+    @include m0-p0;
+    background: $main-background;
+}
+
+.hero-seg {
+    @include imagen-fondo;
+    height: 30vh;
+}
+.vmg-div-seg {
+    width: 756px;
+}
+.hero-div-seg {
+    margin: 0 0 0 5%;
+    padding: 0;
+    color: $gris;
+    font-size: 20px;
+    text-align:left;
+}
+
 .card-style-custom {
     color: $main-text-color;
     background-color: $main-background;
