@@ -1,0 +1,36 @@
+@mixin m0-p0{
+    margin: 0;
+    padding: 0;
+}
+@mixin w-h ($width, $height)
+{
+    height: $height;
+    width: $width;
+}
+@mixin basic-style($margin, $padding, $color, $background-color, $font-size)
+{
+    margin: $margin;
+    padding: $padding;
+    color: $color;
+    background-color: $background-color;
+    font-size: $font-size;
+}
+@mixin border($border, $border-radius, $border-style)
+{
+    border: $border;
+    border-radius: $border-radius;
+    border-style: $border-style;
+}
+@mixin basic-flex ($display, $flex-direction, $justify-content)
+{
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+}
+
+@mixin main-hover-anim ($font-size)
+{
+    font-size: $font-size;
+    box-shadow: 10px 10px $border-color;
+    background-color: $background-color-hover;
+}

@@ -1,0 +1,53 @@
+$footer-height: 80px;
+
+footer {
+    height: $footer-height;
+    width: 100%;
+    padding:  0;
+    color: $blanco;
+    font-size: 14px;
+    background: $border-color;
+    @include basic-flex (flex, row, space-around);
+    position: absolute;
+    bottom: 0;
+    z-index: 200;
+        #company {
+            margin: 0;
+            height: $footer-height;
+            text-align: center;
+            @include basic-flex (flex, row, center);
+        }
+        #hys {
+            margin: 0px;
+           padding-bottom: 2%;
+        }
+        #since {
+            margin: 0px;
+            font-style: italic;
+            font-size: medium;
+        }
+        .arrow_upward {
+            margin: 0;
+            height: 80px;
+            width: 48px;
+            font-size: 48px;
+        }
+        div a.material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 1,
+            'wght' 700,
+            'GRAD' 200,
+            'opsz' 48;
+            font-size: 48;
+            padding-top: 10;
+            text-decoration: none;
+            color: $blanco;
+        }
+        .aux {
+            margin: 0;
+            height: $footer-height;
+            width: 48px;
+            color: $border-color;
+        }
+    
+}

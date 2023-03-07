@@ -1,0 +1,24 @@
+// General
+@import "./general/tipografia.scss";
+@import "./general/colores.scss";
+@import "./general/iconos.scss";
+@import "./general/funciones.scss";
+@import "./general/media.scss";
+
+// Layout
+@import "./layout/html.scss";
+@import "./layout/body.scss";
+
+//Layout/ Header
+@import "./layout/header/navbar.scss";
+@import "./layout/header/topbar.scss";
+
+//Layout/ Footer
+@import "./layout/footer.scss";
+
+//Páginas
+@import "./paginas/capacitacion.scss";
+@import "./paginas/consultoria.scss";
+@import "./paginas/contacto.scss";
+@import "./paginas/seg_industrial.scss";
+@import "./paginas/main_home.scss";

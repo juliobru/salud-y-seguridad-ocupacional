@@ -343,7 +343,7 @@ main {
     background: rgb(225, 231, 230);
 }
  /*#programa-de-salud, #analisis-de-riesgo , #subcontratos, #productos-quimicos, 
-#permisos-de-trabajo, #proteccion-de-maquinas, #cambios-de-ingenieria, #requisitos-legales, #sistemas-gestion */ {
+#permisos-de-trabajo, #proteccion-de-maquinas, #cambios-de-ingenieria, #requisitos-legales, #sistemas-gestion  {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -352,16 +352,16 @@ main {
     border-style: solid;
     padding: 20px;
 
-}
+} */
  /*#programa-de-salud img,/* #analisis-de-riesgo img , #subcontratos img, #productos-quimicos img,
-#permisos-de-trabajo img, #proteccion-de-maquinas img, #cambios-de-ingenieria img, #requisitos-legales img, #sistemas-gestion img */ {
+#permisos-de-trabajo img, #proteccion-de-maquinas img, #cambios-de-ingenieria img, #requisitos-legales img, #sistemas-gestion img  {
     width: 25%;
     margin: 0 20 0 0;
-}
+} 
 .titulo-texto {
     display: flex;
     flex-direction: column;
-}
+}*/
 /* =======Main Consultoria======*/
 .hero-consultoria {
     width: 100%;

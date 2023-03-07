@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+* {
+  font-family: "Oswald",sans-serif; }
+
+html {
+  min-height: 100%;
+  position: relative; }
+
+body {
+  margin: 0;
+  margin-bottom: 90px;
+  padding: 0; }
+
+header {
+  display: contents; }
+
+.navbar-custom {
+  flex-grow: 0.2;
+  justify-content: center;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: left; }
+
+.navbar-menu-custom {
+  text-align: right; }
+
+@media (max-width: 758px) {
+  .navbar-custom {
+    justify-content: right; } }
+
+#contacto {
+  background-color: #444444;
+  color: #fff; }
+
+#capacitacion {
+  background-color: #444444;
+  color: #fff; }
+
+#consultoria {
+  background-color: #444444;
+  color: #fff; }
+
+#seg-ind {
+  background-color: #444444;
+  color: #fff; }
+
+#inicio {
+  background-color: #444444;
+  color: #fff; }
+
+#topbar {
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #444444;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left; }
+  #topbar .topbar-element {
+    margin: 10px;
+    padding-left: 20px; }
+    #topbar .topbar-element a {
+      color: #fff;
+      text-decoration: none;
+      padding-left: 10px; }
+
+@media (max-width: 758px) {
+  #topbar {
+    height: 80px;
+    flex-direction: column; } }
+
+footer {
+  height: 80px;
+  width: 100%;
+  padding: 0;
+  color: #fff;
+  font-size: 14px;
+  background: #222222;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  z-index: 200; }
+  footer #company {
+    margin: 0;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  footer #hys {
+    margin: 0px;
+    padding-bottom: 2%; }
+  footer #since {
+    margin: 0px;
+    font-style: italic;
+    font-size: medium; }
+  footer .arrow_upward {
+    margin: 0;
+    height: 80px;
+    width: 48px;
+    font-size: 48px; }
+  footer div a.material-symbols-outlined {
+    font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 200, 'opsz' 48;
+    font-size: 48;
+    padding-top: 10;
+    text-decoration: none;
+    color: #fff; }
+  footer .aux {
+    margin: 0;
+    height: 80px;
+    width: 48px;
+    color: #222222; }
+
+main {
+  margin: 0;
+  padding: 0;
+  background: #e1e7e6; }
+  main .carousel-stilo {
+    max-height: 680px;
+    overflow: hidden; }
+  main .carousel-item {
+    text-align: center; }
+  main .carousel-caption-custom {
+    bottom: 20vw; }
+  main .hero-vmg-inicio {
+    margin: 0;
+    padding: 0;
+    color: #444444;
+    background-color: none;
+    font-size: 50px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  main .hero-div-inicio {
+    margin: 0;
+    padding: 0;
+    color: #444444;
+    background-color: none;
+    font-size: 20px;
+    text-align: left; }
+  main .grilla {
+    display: grid;
+    grid-template-areas: "presentacion-somos presentacion-somos" "presentacion-foto-actividades hacemos";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    transition: all 500ms; }
+    main .grilla .presentacion-foto-actividades {
+      grid-area: presentacion-foto-actividades;
+      margin: 0 0 0 20px; }
+    main .grilla img {
+      max-height: 100%;
+      object-fit: cover;
+      overflow: hidden; }
+    main .grilla .presentacion-somos {
+      grid-area: presentacion-somos;
+      margin: 20px;
+      padding: 20px;
+      color: #212529;
+      background-color: none;
+      font-size: 18px;
+      border: #222222;
+      border-radius: 8px;
+      border-style: solid;
+      transition: all 500ms; }
+      main .grilla .presentacion-somos:hover {
+        font-size: 24px;
+        box-shadow: 10px 10px #222222;
+        background-color: #dfeef9; }
+    main .grilla .sobre-nosotros {
+      font-weight: bold; }
+    main .grilla .hacemos {
+      grid-area: hacemos;
+      margin: 0 20px 0 0;
+      border: #222222;
+      border-radius: 8px;
+      border-style: solid;
+      padding: 10px 20px 20px 20px;
+      font-size: 18px;
+      transition: all 500ms; }
+      main .grilla .hacemos:hover {
+        font-size: 24px;
+        box-shadow: 10px 10px #222222;
+        background-color: #dfeef9; }
+    main .grilla .presentacion {
+      margin: 0;
+      padding: 0;
+      height: 520px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      main .grilla .presentacion .presentacion__foto-actividades {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 350px; }
+        main .grilla .presentacion .presentacion__foto-actividades img {
+          margin: 20px;
+          width: 50%; }
+        main .grilla .presentacion .presentacion__foto-actividades p {
+          margin: 20px;
+          padding: 20px;
+          width: 50%;
+          border: #222222;
+          border-radius: 0px;
+          border-style: solid; }
+
+@media (max-width: 758px) {
+  .carousel-stilo {
+    max-height: 320px; }
+  .grilla {
+    grid-template-areas: "presentacion-somos" "presentacion-foto-actividades" "hacemos";
+    grid-template-columns: 100%;
+    grid-template-rows: auto 200px auto; }
+  .presentacion-foto-actividades {
+    margin: 10px 20px 10px 20px; }
+  .presentacion-somos:hover {
+    font-size: 18px;
+    box-shadow: 10px 10px #222222;
+    background-color: #dfeef9; }
+  .hacemos {
+    margin: 20px;
+    padding: 20px;
+    border: #222222;
+    border-radius: 8px;
+    border-style: solid;
+    font-size: 18px;
+    transition: all 500ms; }
+    .hacemos:hover {
+      font-size: 18px;
+      box-shadow: 10px 10px #222222;
+      background-color: #dfeef9; } }
+
+@media (min-width: 1280px) {
+  .carousel-stilo {
+    max-height: 780px; }
+  .presentacion-somos:hover {
+    font-size: 26px;
+    box-shadow: 10px 10px #222222;
+    background-color: #dfeef9; }
+  .hacemos {
+    margin: 0 20px 0 0;
+    padding: 20px;
+    font-size: 22px;
+    border: #222222;
+    border-radius: 8px;
+    border-style: solid;
+    transition: all 500ms; }
+    .hacemos:hover {
+      font-size: 26px;
+      box-shadow: 10px 10px #222222;
+      background-color: #dfeef9; } }

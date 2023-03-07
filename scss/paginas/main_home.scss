@@ -1,0 +1,143 @@
+main {
+    margin: 0;
+    padding: 0;
+    background: rgb(225, 231, 230);
+        .carousel-stilo {
+            max-height: 680px;
+            overflow: hidden;
+        }
+        .carousel-item {
+            text-align: center;
+        }
+        .carousel-caption-custom {
+            bottom: 20vw;
+        }
+
+        .hero-vmg-inicio {
+            @include basic-style(0, 0, $gris, none, 50px);
+            text-align: left;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .hero-div-inicio {
+            @include basic-style(0, 0, $gris, none, 20px);
+            text-align: left;
+        }
+
+        .grilla {
+            display: grid;
+            grid-template-areas: 
+                "presentacion-somos presentacion-somos"
+                "presentacion-foto-actividades hacemos";
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto auto;
+            transition: all 500ms;
+                .presentacion-foto-actividades {
+                    grid-area: presentacion-foto-actividades;
+                    margin: 0 0 0 20px;
+                }
+                    img{
+                        max-height: 100%;
+                        object-fit: cover;
+                        overflow: hidden;     
+                    }
+                .presentacion-somos {
+                    grid-area: presentacion-somos;
+                    @include basic-style(20px, 20px, $main-text-color, none, 18px);
+                    @include border($border-color, 8px, solid);
+                    transition: all 500ms;
+                        &:hover {
+                            @include main-hover-anim(24px); 
+                        }
+                }
+                .sobre-nosotros {
+                    font-weight: bold;
+                }
+                .hacemos {
+                    grid-area: hacemos;
+                    margin: 0 20px 0 0;
+                    @include border($border-color, 8px, solid);
+                    padding: 10px 20px 20px 20px;
+                    font-size: 18px;
+                    transition: all 500ms;
+                        &:hover {
+                            @include main-hover-anim(24px); 
+                        }
+                }
+                .presentacion {
+                    @include m0-p0;
+                    @include w-h (100%, 520px);
+                    @include basic-flex (flex, column, space-between);
+                    align-items: center;
+                        .presentacion__foto-actividades {
+                            @include basic-flex (flex, row, space-between);
+                            height: 350px;
+                            img {
+                                margin: 20px;
+                                width: 50%;
+                            
+                            }
+                            p {
+                                margin: 20px;
+                                padding: 20px;
+                                width: 50%;
+                                @include border($border-color, 0px, solid);
+                                
+                            }
+                        }
+                }
+        }
+}
+
+//@media
+
+@media (max-width:$cel) {
+    .carousel-stilo {
+        max-height: 320px;
+    }
+    .grilla{
+        grid-template-areas: 
+        "presentacion-somos"
+        "presentacion-foto-actividades"
+        "hacemos";
+        grid-template-columns: 100%;
+        grid-template-rows: auto 200px auto
+    }
+    .presentacion-foto-actividades {
+        margin: 10px 20px 10px 20px;
+    }
+    .presentacion-somos:hover{
+        @include main-hover-anim (18px)
+    }
+    .hacemos{
+        margin: 20px;
+        padding: 20px;
+        @include border($border-color, 8px, solid);
+        font-size: 18px;
+        transition: all 500ms;
+            &:hover {
+                @include main-hover-anim (18px);
+ 
+            }
+    }
+}
+
+@media (min-width:$pantalla-grande) {
+    .carousel-stilo {
+        max-height: 780px;
+    }
+    .presentacion-somos:hover {
+        @include main-hover-anim (26px);
+    }
+    .hacemos{
+        margin: 0 20px 0 0;
+        padding: 20px;
+        font-size: 22px;
+        @include border($border-color, 8px, solid);
+        transition: all 500ms;
+            &:hover {
+                font-size: 26px;
+                box-shadow: 10px 10px #222222;
+                background-color: #dfeef9;
+            }
+    }
+}
