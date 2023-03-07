@@ -1,0 +1,96 @@
+.hero-cont {
+    @include imagen-fondo;
+    height: 50vh;
+}
+.vmg-div-contacto {
+    width: 756px;
+}
+
+.hero-vmg-contacto {
+    margin: 0 0 0 5%;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: $gris;
+    font-size:50px;
+    text-align: left;
+}
+.hero-div-contacto {
+    margin: 0 0 0 5%;
+    padding: 0;
+    color: $gris;
+    font-size: 20px;
+    text-align:left;
+}
+
+fieldset {
+    margin: 2%;
+    background-color: $form-background-color;
+
+    legend {
+        text-align: center;
+        margin: 0;
+        font-size: large;
+    }
+
+    form {
+        @include basic-flex (flex, column, left);
+   
+            #nombre, #apellido, #empresa, #cargo, #telefono, #mail {
+                margin: 5px 5px 5px 5% ;
+                padding: 0;
+                width: 25%;
+                display: inline;
+                text-align: left;
+            }
+            .input-label-contacto {
+                display: flex;
+                flex-direction: row;
+                
+            }
+            .etiqueta {
+                padding: 5px; 
+            }
+            
+            textarea {
+                margin: 0 5%;
+                padding: 0;
+                width: 50%;
+                height: 100px;
+            }
+            #terms {
+                margin: 5px 3px 5px 5%;
+                padding: 0;
+                width: auto;
+            }
+            .enviar {
+                border-radius: 4px;
+                margin: 20px 14%;
+                width: 7%;
+                text-align: center;
+                border: 2px solid $btn-border-color;
+                color: $btn-enviar-color;
+                background-color: $btn-background-color;
+                box-shadow: 5px 5px $btn-box-shadow-color;
+                transition: all 500ms;
+
+                    &:hover{
+                        background-color: $btn-hover-background-color;
+                        color: $btn-hover-color;
+                        border: $btn-hover-border-color;
+                        box-shadow: 5px 5px $btn-hover-box-shadow-color;
+                    }
+            }
+    }
+}
+@media (max-width:$cel) {
+    .hero-cont {
+        height: 25vh;
+    }
+    form textarea {
+        width: 80%; 
+    }
+    .enviar {
+        width: 20%; 
+    }
+}
+

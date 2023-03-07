@@ -1,0 +1,5 @@
+.card-style-custom {
+    color: $main-text-color;
+    background-color: $main-background;
+    @include border($border-color, 8px, solid);
+}

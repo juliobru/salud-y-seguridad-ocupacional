@@ -254,3 +254,127 @@ main {
       font-size: 26px;
       box-shadow: 10px 10px #222222;
       background-color: #dfeef9; } }
+
+.card-style-custom {
+  color: #212529;
+  background-color: #e1e7e6;
+  border: #222222;
+  border-radius: 8px;
+  border-style: solid; }
+
+.hero-capacitacion {
+  width: 100%;
+  background: url(../imagenes/oficina.bmp) top left;
+  background-image: url(../imagenes/oficina.bmp);
+  background-position-x: left;
+  background-position-y: top;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30vh; }
+
+.vmg-div-capacitacion {
+  width: 500px; }
+
+.hero-div-capacitacion {
+  margin: 0 0 0 5%;
+  padding: 5%;
+  color: #444444;
+  font-size: 20px;
+  text-align: left; }
+
+.hero-cont {
+  width: 100%;
+  background: url(../imagenes/oficina.bmp) top left;
+  background-image: url(../imagenes/oficina.bmp);
+  background-position-x: left;
+  background-position-y: top;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50vh; }
+
+.vmg-div-contacto {
+  width: 756px; }
+
+.hero-vmg-contacto {
+  margin: 0 0 0 5%;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #444444;
+  font-size: 50px;
+  text-align: left; }
+
+.hero-div-contacto {
+  margin: 0 0 0 5%;
+  padding: 0;
+  color: #444444;
+  font-size: 20px;
+  text-align: left; }
+
+fieldset {
+  margin: 2%;
+  background-color: #d3e9ed; }
+  fieldset legend {
+    text-align: center;
+    margin: 0;
+    font-size: large; }
+  fieldset form {
+    display: flex;
+    flex-direction: column;
+    justify-content: left; }
+    fieldset form #nombre, fieldset form #apellido, fieldset form #empresa, fieldset form #cargo, fieldset form #telefono, fieldset form #mail {
+      margin: 5px 5px 5px 5%;
+      padding: 0;
+      width: 25%;
+      display: inline;
+      text-align: left; }
+    fieldset form .input-label-contacto {
+      display: flex;
+      flex-direction: row; }
+    fieldset form .etiqueta {
+      padding: 5px; }
+    fieldset form textarea {
+      margin: 0 5%;
+      padding: 0;
+      width: 50%;
+      height: 100px; }
+    fieldset form #terms {
+      margin: 5px 3px 5px 5%;
+      padding: 0;
+      width: auto; }
+    fieldset form .enviar {
+      border-radius: 4px;
+      margin: 20px 14%;
+      width: 7%;
+      text-align: center;
+      border: 2px solid #090808e9;
+      color: #222222;
+      background-color: #a1a0a071;
+      box-shadow: 5px 5px #d3e9ed;
+      transition: all 500ms; }
+      fieldset form .enviar:hover {
+        background-color: blue;
+        color: #fff;
+        border: #fff;
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.24); }
+
+@media (max-width: 758px) {
+  .hero-cont {
+    height: 25vh; }
+  form textarea {
+    width: 80%; }
+  .enviar {
+    width: 20%; } }

@@ -18,8 +18,8 @@ header {
     }
 }
 
-@each $nav-menu in #contacto, #capacitacion, #consultoria, #seg-ind, #inicio {
-    #{$nav-menu}{
+@each $nav-menu in contacto, capacitacion, consultoria, seg-ind, inicio {
+    #{"#" + $nav-menu}{
         background-color: $gris;
         color: $blanco;
     }

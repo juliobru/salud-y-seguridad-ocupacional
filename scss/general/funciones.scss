@@ -34,3 +34,20 @@
     box-shadow: 10px 10px $border-color;
     background-color: $background-color-hover;
 }
+@mixin imagen-fondo {
+    width: 100%;
+    background: url(../imagenes/oficina.bmp) top left;
+        background-image: url(../imagenes/oficina.bmp);
+        background-position-x: left;
+        background-position-y: top;
+        background-size: initial;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: initial;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}

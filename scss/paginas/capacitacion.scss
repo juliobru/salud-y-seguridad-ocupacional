@@ -1,0 +1,16 @@
+.hero-capacitacion {
+    @include imagen-fondo;
+    height: 30vh;
+}
+.vmg-div-capacitacion {
+    width: 500px;
+}
+
+
+.hero-div-capacitacion {
+    margin: 0 0 0 5%;
+    padding: 5%;
+    color: $gris;
+    font-size: 20px;
+    text-align:left;
+}
