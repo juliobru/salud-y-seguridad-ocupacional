@@ -1,11 +1,7 @@
-#seg-industrial {
-    @include m0-p0;
-    background: $main-background;
-}
 
 .hero-seg {
     @include imagen-fondo;
-    height: 30vh;
+    height: 15vh;
 }
 .vmg-div-seg {
     width: 756px;

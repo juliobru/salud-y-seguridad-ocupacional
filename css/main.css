@@ -74,7 +74,7 @@ header {
     flex-direction: column; } }
 
 footer {
-  height: 80px;
+  height: 90px;
   width: 100%;
   padding: 0;
   color: #fff;
@@ -88,7 +88,7 @@ footer {
   z-index: 200; }
   footer #company {
     margin: 0;
-    height: 80px;
+    height: 90px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -113,7 +113,7 @@ footer {
     color: #fff; }
   footer .aux {
     margin: 0;
-    height: 80px;
+    height: 90px;
     width: 48px;
     color: #222222; }
 
@@ -258,11 +258,6 @@ main {
       box-shadow: 10px 10px #222222;
       background-color: #dfeef9; } }
 
-#seg-industrial {
-  margin: 0;
-  padding: 0;
-  background: #e1e7e6; }
-
 .hero-seg {
   width: 100%;
   background: url(../imagenes/oficina.bmp) top left;
@@ -278,7 +273,7 @@ main {
   position: relative;
   display: flex;
   align-items: center;
-  height: 30vh; }
+  height: 15vh; }
 
 .vmg-div-seg {
   width: 756px; }
