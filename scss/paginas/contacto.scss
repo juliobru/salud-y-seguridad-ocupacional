@@ -86,11 +86,17 @@ fieldset {
     .hero-cont {
         height: 25vh;
     }
-    form textarea {
-        width: 80%; 
-    }
-    .enviar {
-        width: 20%; 
-    }
+    fieldset form {
+
+            #nombre, #apellido, #empresa, #cargo, #telefono, #mail {
+                width: 60%; 
+            }
+            form textarea {
+                width: 80%; 
+            }
+            .enviar {
+                width: 20%; 
+            }
+    }        
 }
 
