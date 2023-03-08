@@ -480,6 +480,20 @@ main {
   font-size: 20px;
   text-align: left; }
 
+.read-more {
+  padding: 7px 20px;
+  font-size: 12px;
+  background: #2196F3;
+  color: #ffffff;
+  box-shadow: 0px 10px 20px -10px #1376c5;
+  border-radius: 25px;
+  text-transform: uppercase; }
+  .read-more:hover {
+    background: blue;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.24); }
+
 .hero-cont {
   width: 100%;
   background: url(../imagenes/oficina.bmp) top left;
