@@ -14,10 +14,11 @@
 @import "./layout/header/topbar.scss";
 
 //Layout/ Footer
-@import "./layout/footer.scss";
+@import "./layout/footer";
 
-//Páginas
-@import "./paginas/main_home.scss";
+
+//Paginas
+@import "./paginas/main_home";
 @import "./paginas/seg_industrial.scss";
 @import "./paginas/consultoria.scss";
 @import "./paginas/capacitacion.scss";
