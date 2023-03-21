@@ -1,25 +1,26 @@
 #topbar {
-            height: 40px;
-            @include basic-style(0, 0, $blanco, $gris, 14px);
-            @include basic-flex(flex, row, left);
+    height: 40px;
+    @include basic-style(0, 0, $blanco, $gris, 14px);
+    @include basic-flex(flex, row, left);
 
-            .topbar-element {
-                margin: 10px;
-                padding-left: 20px;
-                display: flex;
-                flex-direction: row;
-            
-                a {
-                    color: $blanco;
-                    text-decoration: none;
-                    padding-left: 10px;
-                    
-                }
-            }
+    .topbar-element {
+        margin: 10px;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: row;
+
+        a {
+            color: $blanco;
+            text-decoration: none;
+            padding-left: 10px;
+
+        }
+    }
 }
+
 @media (max-width:$cel) {
     #topbar {
         height: 80px;
-        flex-direction: column; 
+        flex-direction: column;
     }
 }

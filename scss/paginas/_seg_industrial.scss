@@ -1,17 +1,18 @@
-
 .hero-seg {
     @include imagen-fondo;
     height: 15vh;
 }
+
 .vmg-div-seg {
     width: 756px;
 }
+
 .hero-div-seg {
     margin: 0 0 0 5%;
     padding: 0;
     color: $gris;
     font-size: 20px;
-    text-align:left;
+    text-align: left;
 }
 
 .card-style-custom {

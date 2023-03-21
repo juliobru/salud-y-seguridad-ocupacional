@@ -535,7 +535,12 @@ fieldset {
     display: flex;
     flex-direction: column;
     justify-content: left; }
-    fieldset form #nombre, fieldset form #apellido, fieldset form #empresa, fieldset form #cargo, fieldset form #telefono, fieldset form #mail {
+    fieldset form #nombre,
+    fieldset form #apellido,
+    fieldset form #empresa,
+    fieldset form #cargo,
+    fieldset form #telefono,
+    fieldset form #mail {
       margin: 5px 5px 5px 5%;
       padding: 0;
       width: 25%;
@@ -574,7 +579,12 @@ fieldset {
 @media (max-width: 758px) {
   .hero-cont {
     height: 25vh; }
-  fieldset form #nombre, fieldset form #apellido, fieldset form #empresa, fieldset form #cargo, fieldset form #telefono, fieldset form #mail {
+  fieldset form #nombre,
+  fieldset form #apellido,
+  fieldset form #empresa,
+  fieldset form #cargo,
+  fieldset form #telefono,
+  fieldset form #mail {
     width: 60%; }
   fieldset form form textarea {
     width: 80%; }
